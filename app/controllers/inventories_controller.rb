@@ -6,8 +6,8 @@ class InventoriesController < ApplicationController
   # GET users/1/inventories
   def index
     @inventories = Inventory
-    .includes(:user)
-    .where(user: current_user)
+      .includes(:user)
+      .where(user: current_user)
   end
 
   # GET users/1/inventories/1
@@ -17,13 +17,12 @@ class InventoriesController < ApplicationController
 
   # GET users/1/inventories/new
   def new
-   # @inventory.user_id = current_user.id
+    # @inventory.user_id = current_user.id
     @inventory = Inventory.new
   end
 
   # GET users/1/inventories/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST users/1/inventories
   def create
@@ -37,15 +36,13 @@ class InventoriesController < ApplicationController
   end
 
   # PUT users/1/inventories/1
-=begin
-  def update
-    if @inventory.update_attributes(inventory_params)
-      redirect_to([@inventory.user, @inventory], notice: 'Inventory was successfully updated.')
-    else
-      render action: 'edit'
-    end
-  end
-=end
+  #   def update
+  #     if @inventory.update_attributes(inventory_params)
+  #       redirect_to([@inventory.user, @inventory], notice: 'Inventory was successfully updated.')
+  #     else
+  #       render action: 'edit'
+  #     end
+  #   end
   # DELETE users/1/inventories/1
   def destroy
     @inventory = Inventory.where(id: params[:id], user: current_user)
@@ -54,29 +51,26 @@ class InventoriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-=begin
-    def set_user
-      @user = User.find(set_params)
-    end
 
-    def set_params
-      {
-        user: current_user
-      }
-    end
-=end
-=begin
-    def set_inventory
-      @inventory = Inventory.find(params[:id])
-    end
-=end
+  # Use callbacks to share common setup or constraints between actions.
+  #     def set_user
+  #       @user = User.find(set_params)
+  #     end
+  #
+  #     def set_params
+  #       {
+  #         user: current_user
+  #       }
+  #     end
+  #     def set_inventory
+  #       @inventory = Inventory.find(params[:id])
+  #     end
 
-    # Only allow a trusted parameter "white list" through.
-    def inventory_params
-      params
+  # Only allow a trusted parameter "white list" through.
+  def inventory_params
+    params
       .require(:inventory)
       .permit(:name, :user_id)
       .merge(user: current_user)
-    end
+  end
 end
