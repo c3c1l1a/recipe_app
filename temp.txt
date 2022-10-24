@@ -1,0 +1,10 @@
+rails g nested_scaffold user/inventory  name:string  user:references
+rails db:migrate
+rails generate migration add_name_to_users name:string
+
+
+
+
+
+
+<td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
