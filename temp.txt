@@ -42,3 +42,8 @@ def new
 
 
 <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>
+
+
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path(@inventory) %>

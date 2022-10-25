@@ -9,7 +9,7 @@
     <th>Action</th>
   </tr>
 
-<% @inventory_foods.each do |ingredient| %>
+<% @inventory_foods&.each do |ingredient| %>
   <tr>
     <td><%= ingredient.food.name %></td>
     <td><%= ingredient.quantity %></td>
@@ -20,19 +20,3 @@
 <% end %>
 </table>
 
-
-
-
-
-
-
-
-
-<p>
-  <b>Name:</b>
-  <%= @inventory.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
-<%= link_to 'Back', inventories_path(@inventory) %>
