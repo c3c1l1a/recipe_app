@@ -12,10 +12,10 @@
 <% @inventories.each do |inventory| %>
   <tr>
     <td><%= inventory.name %></td>
-    <td><%= inventory.user.name %></td>
+  
     <td><%= link_to 'Show', [inventory] %></td>
 
-    <td><%= link_to 'Destroy', [inventory], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= button_to('Destroy', inventory_path(inventory), method: :delete) %></td>
   </tr>
 <% end %>
 </table>

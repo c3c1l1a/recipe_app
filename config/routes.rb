@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :recipes
-  resources :inventories, only: %i[index show destroy new create] do
+  resources :inventories, only: [:index, :show, :destroy, :new, :create] do
   end
 
   namespace :recipes do
