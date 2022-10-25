@@ -1,6 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Foods</h1>
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-2">
+      <button type="button" class="btn btn-warning">
+        <%= link_to "Add food", new_food_path %>
+      </button>
+    </div>
+  </div>
+</div>
+
 
 <div id="foods">
   <% @foods.each do |food| %>
@@ -11,4 +20,4 @@
   <% end %>
 </div>
 
-<%= link_to "New food", new_food_path %>
+
