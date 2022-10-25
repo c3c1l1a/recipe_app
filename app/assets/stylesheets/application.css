@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ .recipe-destroy {
+  border: none;
+  background: none;
+ }
+
+ .recipes-all {
+  width: 70%;
+  margin: auto;
+  border: 2px solid rgb(27, 25, 25);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+.recipe-show {
+  display: flex;
+  gap: 20rem;
+  padding-bottom: 2rem;
+}
