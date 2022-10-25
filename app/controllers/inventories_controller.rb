@@ -1,7 +1,7 @@
 class InventoriesController < ApplicationController
   # before_action :set_user
-  before_action :set_inventory, only: %i[show edit destroy]
-  before_action :authenticate_user!
+  # before_action :set_inventory, only: [:show, :edit, :destroy]
+  # before_action :authenticate_user!
 
   # GET users/1/inventories
   def index
@@ -12,7 +12,7 @@ class InventoriesController < ApplicationController
 
   # GET users/1/inventories/1
   def show
-    @inventory = Inventory.where(id: params[:id])
+    @inventory = Inventory.where(id: params[:id], user: current_user)
   end
 
   # GET users/1/inventories/new
@@ -20,9 +20,6 @@ class InventoriesController < ApplicationController
     # @inventory.user_id = current_user.id
     @inventory = Inventory.new
   end
-
-  # GET users/1/inventories/1/edit
-  def edit; end
 
   # POST users/1/inventories
   def create
@@ -43,24 +40,20 @@ class InventoriesController < ApplicationController
   #       render action: 'edit'
   #     end
   #   end
+
   # DELETE users/1/inventories/1
   def destroy
-    Inventory.find(destroy_params).destroy
+    # destructuring inventoryList array <=> @inventory.first
+    @inventory, = Inventory.where(id: params[:id], user: current_user)
+    @inventory&.destroy
     redirect_to inventories_path
   end
 
   private
 
-  def destroy_params
-    {
-      id: params[:id]
-      # user_id: current_user.id
-    }
-  end
-
-  def set_inventory
-    @inventory = Inventory.find(params[:id])
-  end
+  #   def set_inventory
+  #     @inventory = Inventory.find(params[:id])
+  #   end
 
   # Use callbacks to share common setup or constraints between actions.
   #     def set_user
