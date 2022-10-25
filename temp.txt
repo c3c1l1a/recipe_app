@@ -3,6 +3,9 @@ rails db:migrate
 rails generate migration add_name_to_users name:string
 rails generate migration add_description_to_inventories description:string
 
+Inventory Details
+bin/rails generate model inventory_food quantity:integer inventory:references food:references
+
 
 
 

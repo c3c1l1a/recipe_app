@@ -1,5 +1,33 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @inventory.name %></h1>
+
+<table>
+  <tr>
+    <th>Food</th>
+    <th>Quantity</th>
+    <th>Action</th>
+  </tr>
+
+<% @inventory_foods.each do |ingredient| %>
+  <tr>
+    <td><%= ingredient.food.name %></td>
+    <td><%= ingredient.quantity %></td>
+    <td>
+       <%= button_to 'Destroy', inventory_path(inventory), method: :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+
+
+
+
+
+
+
+
 <p>
   <b>Name:</b>
   <%= @inventory.name %>
