@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row justify-content-end">
+    <div class="col-2">
+      <button type="button" class="btn btn-warning">
+        <%= link_to "Add food", new_food_path %>
+      </button>
+    </div>
+  </div>
+  <div id="foods">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col"><strong>Name</strong></th>
+          <th scope="col"><strong>Measurement unit</strong></th>
+          <th scope="col"><strong>Unit Price</strong></th>
+          <th scope="col"><strong>Action</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @foods.each do |food| %>
+          <%= render food %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
