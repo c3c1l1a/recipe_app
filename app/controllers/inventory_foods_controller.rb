@@ -1,4 +1,5 @@
 class InventoryFoodsController < ApplicationController
+
   def new
     @inventory_food = InventoryFood.new
     @inventory, = Inventory.where(id: params[:inventory_id], user: current_user)

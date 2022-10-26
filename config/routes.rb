@@ -8,11 +8,17 @@ Rails.application.routes.draw do
   resources :foods
   resources :recipes
   resources :inventories, only: [:index, :show, :destroy, :new, :create] do
-    resources :inventory_foods, only: [:destroy, :new, :create]
+    resources :inventory_foods, only: [:index, :destroy, :new, :create]
   end
 
   namespace :recipes do
     get '', action: 'index'
     get '/:id', action: 'show'
+  end
+
+  namespace :recipes do
+    namespace :inventories do
+      get '/:id', action: 'new'
+    end
   end
 end

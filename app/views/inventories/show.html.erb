@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1><%= @inventory.name %></h1>
+<%= link_to('Add Food', new_inventory_food_path(@inventory), class: "btn btn-primary") %>
 
 <table>
   <tr>
