@@ -1,82 +1,79 @@
-llow)
-# Recipe-App
+# Recipe App
+> In this project We built a recipe application using rails and styled with bootstrap.
+Some of the advanced concepts explored in this project includes.
 
-> The Recipe app keeps track of all your recipes, ingredients, and inventory.
-
-
-## Built With
-
-- Ruby on Rails [click here >>](https://guides.rubyonrails.org/)
-- Rubocop: [Rubocop](https://rubocop.org/)
-- UML schema diagram
-- Bootstrap
-- Ruby
+- Working with advanced associations
+- Basic Authentication using username and password
+- Used RSpec as the test suit 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+This project is open source and you are free take modify and do with as you wish. To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-```
-  Ruby
-  Ruby on Rails
-  PostgreSQL
-```
-### Setup
-Clone the repository and change the directory to blog
+### Prerequisites ♻️
+- Any modern browser.
+- A local version control like git installed on your computer
+- Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
+- Knowledge of Ruby, databases and rails
+- Ruby version >=3.0.0
 
-``` 
-  $ git clone 
-  $ cd 
-```
+## Prerequisites
+Ruby: 3.1.2 Rails: 7.0.4 Postgres: >=9.5
 
-### Install
-Install all project dependencies by running the command below
- 
-``` 
-  $ bundle install
-```
-
-### Run the application
-```
-  Linux
-  $ bin/rails server
-```
-
-```
-  Windows
-  $ ruby bin/rails server
-```
-
-### Visit the homepage of application
-```
-  $ http://localhost:3000/
-```
-
-### Check linter errors
-``` 
-  $ rubocop .
-```
-
-### Run tests
-``` 
-  $ Rspec spec
-```
-
-### Authors
-
-👤 **Nadia Levina**
+### Download 🎰
+-  Click this [link](https://github.com/c3c1l1a/recipe_app.git) to clone down the source code or download it as a [zip file](https://github.com/c3c1l1a/recipe_app/archive/refs/heads/dev.zip)
 
 
-👤 **Cecilia Mukima**
+## Run installation scripts
+> Run the commands below in the terminal or `git bash`.
+> `bundle install` - to install gems
 
 
-👤 **Abby Nyakara**
+## Run rails server 
+> `rails server` to start the server local on your machine 
+> Open your browser and paste this in the URL box `http://127.0.0.1:3000`
+
+## Run rails console
+> `rails c` to start rails console
+> `rails c --sandbox` to start the rails console in sandbox for testing without affecting the database
+
+### Run code linters 🧪
+> Run the commands below in the terminal or `git bash`.
+> `rubocop `  to run the rubocop linter
+
+### Run test scripts
+- `rspec `  to run the test scripts
+
+
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
+- Twitter: [@cMukima](https://twitter.com/CMukima)
+- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
+- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
+
+👤 **Author2**
+
+- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
+- Twitter: [@cMukima](https://twitter.com/CMukima)
+- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
+- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
+
+👤 **Author3**
+
+- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
+- Twitter: [@cMukima](https://twitter.com/CMukima)
+- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
+- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -84,7 +81,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
