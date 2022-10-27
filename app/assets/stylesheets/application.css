@@ -12,3 +12,20 @@
   font-size: 1rem;
   text-transform: capitalize;
 }
+
+.recipes-all {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.recipe-destroy {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
