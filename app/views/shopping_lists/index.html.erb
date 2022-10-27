@@ -1,0 +1,33 @@
+<div class = "text-center">
+	<h1>Shopping Lists</h1>
+</div>
+
+<div class="d-flex justify-content-between m-5">
+	<div>
+		<h5>Amount of food items to buy: <%= @recipe_foods.length %> </h5>
+		<h5 class="fw-bold">Total price: <%= @total %> </h5>
+	</div>
+	<div>
+		<h5>Recipe: <%= link_to @recipe.name, recipe_path(@recipe) %></h5>
+		<h5>Inventory: <%= link_to @inventory.name, inventory_path(@inventory) %></h5>
+	</div>
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+    <tbody>
+      <% @shopping_lists.each do |list| %>
+        <tr>
+          <td><%= list.food.name %></td>
+          <td><%= list.quantity %></td>
+          <td><span>$<%= list.food.price %></span></td>
+      <% end %>
+    </tbody>
+</table>
+

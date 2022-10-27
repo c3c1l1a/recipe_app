@@ -14,23 +14,13 @@
  *= require_self
  */
 
- .recipe-destroy {
-  border: none;
-  background: none;
- }
+.inventories {
+  border: 0.1rem solid #646464;
+  border-radius: 1.2rem;
+  box-shadow: -6px 3px 15px rgb(131, 128, 128, 0.6);
+  padding: 2rem;
+}
 
- .recipes-all {
-  width: 70%;
-  margin: auto;
-  border: 2px solid rgb(27, 25, 25);
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
- }
-
-.recipe-show {
-  display: flex;
-  gap: 20rem;
-  padding-bottom: 2rem;
+.username {
+  color: #fff;
 }

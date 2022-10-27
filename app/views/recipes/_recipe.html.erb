@@ -1,13 +1,7 @@
-<div id="<%= dom_id recipe %>" >
-  <div>
-    <p>
-      <%= recipe.name %>
-    </p>
-  </div>
-
-  <p>
-    <%= recipe.description %>
-  </p>
-
-
+<div class="recipe-cont">
+    <div class="recipe-action">
+        <h3><%=link_to recipe.name,recipe_path(recipe) %></h3>
+        <%=button_to 'REMOVE', recipe_path(recipe), method: :delete, data: { confirm: 'Are you sure?' }%>
+    </div>
+    <p class="recipe-details"><%=recipe.description%></p>
 </div>

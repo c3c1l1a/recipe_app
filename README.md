@@ -1,24 +1,91 @@
-# README
+llow)
+# Recipe-App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> The Recipe app keeps track of all your recipes, ingredients, and inventory.
 
-Things you may want to cover:
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails [click here >>](https://guides.rubyonrails.org/)
+- Rubocop: [Rubocop](https://rubocop.org/)
+- UML schema diagram
+- Bootstrap
+- Ruby
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
+```
+  Ruby
+  Ruby on Rails
+  PostgreSQL
+```
+### Setup
+Clone the repository and change the directory to blog
 
-* How to run the test suite
+``` 
+  $ git clone 
+  $ cd 
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Install
+Install all project dependencies by running the command below
+ 
+``` 
+  $ bundle install
+```
 
-* Deployment instructions
+### Run the application
+```
+  Linux
+  $ bin/rails server
+```
 
-* ...
+```
+  Windows
+  $ ruby bin/rails server
+```
+
+### Visit the homepage of application
+```
+  $ http://localhost:3000/
+```
+
+### Check linter errors
+``` 
+  $ rubocop .
+```
+
+### Run tests
+``` 
+  $ Rspec spec
+```
+
+### Authors
+
+👤 **Nadia Levina**
+
+
+👤 **Cecilia Mukima**
+
+
+👤 **Abby Nyakara**
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

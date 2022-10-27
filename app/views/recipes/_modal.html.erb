@@ -1,0 +1,23 @@
+<div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Generating Shopping List</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Please choose an Inventory to use.</p>
+        <div >
+          <%= form_with url: "/shopping_lists", method: :get do |form| %>
+             <%= form.select :inventory_id, Inventory.all.collect {|inventory| [inventory.name, inventory.id]},{
+                include_blank: true} , class:"form-select" %>
+               <%= form.hidden_field :recipe_id, value: recipe_id.id  %>
+             <div class="modal-footer">
+               Click to Generate:<%= form.submit %>
+             </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
