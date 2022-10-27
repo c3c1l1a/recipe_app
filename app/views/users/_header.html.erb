@@ -21,9 +21,7 @@
           </li> 
         </ul>
         <ul class="d-flex navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <h4 class="username">Hello <%= current_user.name %></h4>
-          </li>
+          
           <li class="nav-item">
             <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"nav-link"%>
           </li>

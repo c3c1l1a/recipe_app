@@ -1,18 +1,18 @@
 <h4>Add Inventory</h4>
 
 <%= form_with model: @inventory do |form| %>
-<div class="mb-3">
+<div class="mb-3 form-group">
   <%= form.label :name, class:'form-label' %><br />
   <%= form.text_field :name, class:'form-control' %>
 </div>
 
-<div class="mb-3">
+<div class="mb-3 form-group">
     <%= form.label :description, "Write description", class: "form-label" %><br />
     <%= form.text_area :description, required: true, class:'form-control'%>
 </div>
 
  <div class="actions mb-5 text-center">
-    <%= form.submit "Add Inventory", class:'btn btn-lg btn-secondary' %>
+    <%= form.submit "Add Inventory", class:'btn btn-primary' %>
 </div>
 
 <% end %>
