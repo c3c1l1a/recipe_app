@@ -1,0 +1,9 @@
+<div class="inventories row justify-content-start mb-3">
+    <div class="col-3">
+        <h3><%=link_to inventory.name,inventory_path(inventory) %></h3>
+        <%=button_to 'REMOVE', inventory_path(inventory), method: :delete, data: { confirm: 'Do you want to delete #{inventory.name}' }, class:'btn btn-md btn-danger'%>
+    </div>
+    <div class="col-9">
+        <p class="col-12 text-md-start"><%=inventory.description%></p>
+    </div>
+</div>

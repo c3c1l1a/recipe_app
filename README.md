@@ -1,24 +1,87 @@
-# README
+# Recipe App
+> In this project We built a recipe application using rails and styled with bootstrap.
+Some of the advanced concepts explored in this project includes.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Working with advanced associations
+- Basic Authentication using username and password
+- Used RSpec as the test suit 
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+This project is open source and you are free take modify and do with as you wish. To get a local copy up and running follow these simple example steps.
 
-* System dependencies
+### Prerequisites ♻️
+- Any modern browser.
+- A local version control like git installed on your computer
+- Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer;
+- Knowledge of Ruby, databases and rails
+- Ruby version >=3.0.0
 
-* Configuration
+## Prerequisites
+Ruby: 3.1.2 Rails: 7.0.4 Postgres: >=9.5
 
-* Database creation
+### Download 🎰
+-  Click this [link](https://github.com/c3c1l1a/recipe_app.git) to clone down the source code or download it as a [zip file](https://github.com/c3c1l1a/recipe_app/archive/refs/heads/dev.zip)
 
-* Database initialization
 
-* How to run the test suite
+## Run installation scripts
+> Run the commands below in the terminal or `git bash`.
+> `bundle install` - to install gems
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Run rails server 
+> `rails server` to start the server local on your machine 
+> Open your browser and paste this in the URL box `http://127.0.0.1:3000`
 
-* ...
+## Run rails console
+> `rails c` to start rails console
+> `rails c --sandbox` to start the rails console in sandbox for testing without affecting the database
+
+### Run code linters 🧪
+> Run the commands below in the terminal or `git bash`.
+> `rubocop `  to run the rubocop linter
+
+### Run test scripts
+- `rspec `  to run the test scripts
+
+
+## Authors
+
+👤 **Cecilia**
+
+- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
+- Twitter: [@cMukima](https://twitter.com/CMukima)
+- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
+- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
+
+👤 **Abby**
+
+- GitHub: [@AbbyNyakara](https://github.com/AbbyNyakara) 
+- Twitter: [@AbigaelNyakara](https://twitter.com/AbbyNyakara) 
+- LinkedIn: [Abigael Nyakara](https://linkedin.com/in/AbbyNyakara) 
+
+👤 **Nadya**
+
+- GitHub: [@petushka1](https://github.com/petushka1)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/nadyalevina)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
