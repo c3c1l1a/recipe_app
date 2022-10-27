@@ -3,6 +3,7 @@
 Rails.application.routes.draw do
 
   root 'recipes#index'
+  resources :public_recipes, only: %i[index]
 
   devise_for :users
   resources :foods
@@ -15,10 +16,7 @@ Rails.application.routes.draw do
     get '', action: 'index'
     get '/:id', action: 'show'
   end
-
-  namespace :recipes do
-    namespace :inventories do
-      get '/:id', action: 'new'
-    end
+  namespace :inventories do
+    get '/:id', action: 'new'
   end
 end

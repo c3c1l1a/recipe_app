@@ -14,11 +14,11 @@
 
   <div class="field">
     <%= f.label :food %><br />
-    <%= f.collection_select :food, @foods, :id, :name, include_blank: true %>
+    <%= f.collection_select :food, @foods, :name, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :quantity %><br />
-    <%= f.number_area :quantity %>
+    <%= f.number_field :quantity %>
   </div>
   <div class="actions">
     <%= f.submit %>

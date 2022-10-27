@@ -12,8 +12,8 @@ class InventoriesController < ApplicationController
 
   # GET users/1/inventories/1
   def show
-    @inventory = Inventory.where(id: params[:id], user: current_user)
-    @inventory_foods = @inventory.inventory_foods.includes(:food) || []
+    @inventory, = Inventory.where(id: params[:id], user: current_user)
+    @inventory_foods = @inventory.inventory_foods.includes(:food)
   end
 
   # GET users/1/inventories/new
