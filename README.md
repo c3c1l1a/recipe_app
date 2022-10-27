@@ -47,26 +47,23 @@ Ruby: 3.1.2 Rails: 7.0.4 Postgres: >=9.5
 
 ## Authors
 
-👤 **Author1**
+👤 **Cecilia**
 
 - GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
 - Twitter: [@cMukima](https://twitter.com/CMukima)
 - LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
 - Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
 
-👤 **Author2**
+👤 **Abby**
 
-- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
-- Twitter: [@cMukima](https://twitter.com/CMukima)
-- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
-- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
+- GitHub: [@AbbyNyakara](https://github.com/AbbyNyakara) 
+- Twitter: [@AbigaelNyakara](https://twitter.com/AbbyNyakara) 
+- LinkedIn: [Abigael Nyakara](https://linkedin.com/in/AbbyNyakara) 
 
-👤 **Author3**
+👤 **Nadya**
 
-- GitHub: [@c3c1l1a](https://github.com/c3c1l1a/)
-- Twitter: [@cMukima](https://twitter.com/CMukima)
-- LinkedIn: [cecilia-wangui-mukima](https://linkedin.com/in/linkedinhandle)
-- Profile [c3cl1ia.github.io](https://c3c1l1a.github.io)
+- GitHub: [@petushka1](https://github.com/petushka1)
+- LinkedIn: [LinkedIn](http://www.linkedin.com/in/nadyalevina)
 
 
 ## 🤝 Contributing
