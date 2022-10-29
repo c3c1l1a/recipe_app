@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+  rails: 
+    build: rails_image
+    volumes:
+      - ./:/home/app
+      - ./bundle_cache:/usr/local/bundle
+    ports:
+      - 3000:3000
