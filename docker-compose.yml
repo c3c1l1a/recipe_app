@@ -6,16 +6,29 @@ services:
     volumes:
       - ./:/home/app
       - ./bundle_cache:/usr/local/bundle
-    ports:
-      - 3000:3000
+    # ports:
+    #  - 3000:3000
+    networks:
+      - proxy-network
+    environment:
+      PORT: 80
+      VIRTUAL_HOST: recipeapp.hopto.org
+      LETSENCRYPT_HOST: recipeapp.hopto.org
 
   postgres:
     image: postgres:latest
     volumes: 
       - db:/var/lib/postgresql/data
+    networks:
+      - proxy-network
     environment:
       POSTGRES_PASSWORD: 1234
       PGDATA: /var/lib/postgresql/data/pgdata
 
 volumes:
   db: {}
+
+networks:
+  proxy-network: 
+    name: proxy-network
+
