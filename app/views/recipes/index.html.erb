@@ -1,0 +1,16 @@
+<div class="recipes-containr">
+  <% @recipes.each do |recipe| %>
+    <div class="recipes-all class="row"">
+      <div class="col">
+        <p><%= recipe.name %></p>
+        <p><%= button_to "Destroy this recipe", recipe_path(recipe), method: :delete, class: "recipe-destroy link-info" %></p>
+      </div>
+
+      <div class="col">
+        <p><%= recipe.description %></p>
+      </div>
+    </div> 
+  <% end %>
+</div>
+
+<%= link_to "New recipe", new_recipe_path, class: "btn btn-primary" %>

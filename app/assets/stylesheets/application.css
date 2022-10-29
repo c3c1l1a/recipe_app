@@ -1,0 +1,31 @@
+.inventories {
+  border: 0.1rem solid #646464;
+  border-radius: 1.2rem;
+  box-shadow: -6px 3px 15px rgb(131, 128, 128, 0.6);
+  padding: 2rem;
+}
+
+.username {
+  color: gray;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.recipes-all {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.recipe-destroy {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
