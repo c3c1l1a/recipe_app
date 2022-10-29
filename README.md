@@ -6,6 +6,10 @@ Some of the advanced concepts explored in this project includes.
 - Basic Authentication using username and password
 - Used RSpec as the test suit 
 
+## Live site 
+https://recipeapp.hopto.org
+
+
 ## Getting Started
 
 This project is open source and you are free take modify and do with as you wish. To get a local copy up and running follow these simple example steps.
